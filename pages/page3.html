@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Atributos HTML</h2>
+    <p>Todos os elementos HTML podem ter atributos.</p>
+    <p>Os atributos fornecem informações adicionais sobre os elementos.</p>
+    <p>Os atributos são sempre especificados na tag inicial.</p>
+    <p>Os atributos geralmente vêm em pares nome/valor como: nome="valor".</p>
+
+    <h3>O atributo href</h3>
+    <p>A <code class="code">&lt;a&gt;</code> tag define um hiperlink. O <code class="code">href</code> atributo especifica o URL da página para a qual o link leva:</p>
+    <p>Exemplo:</p>
+    <pre><code class="code">
+&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;
+    </code></pre>
+    <p>Você aprenderá mais sobre links em nosso capítulo <a href="#">Links HTML</a>.</p>
+
+    <h3>O atributo src</h3>
+    <p>A <code class="code">&lt;img&gt;</code> tag é usada para incorporar uma imagem em uma página HTML. O <code class="code">src</code> atributo especifica o caminho para a imagem a ser exibida:</p>
+    <p>Exemplo:</p>
+    <pre><code class="code">
+&lt;img src="img_girl.jpg"&gt;
+    </code></pre>
+    <p>Existem duas maneiras de especificar o URL no <code class="code">src</code> atributo:</p>
+    <ol>
+        <li>URL absoluta – Links para uma imagem externa hospedada em outro site. Exemplo: <code class="code">src="https://www.w3schools.com/images/img_girl.jpg"</code>.</li>
+        <li>URL relativo - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem barra, será relativo à página atual. Exemplo: <code class="code">src="img_girl.jpg"</code>. Se o URL começar com uma barra, será relativo ao domínio. Exemplo: <code class="code">src="/images/img_girl.jpg"</code>.</li>
+    </ol>
+    <p>Notas: Imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; ele pode ser removido ou alterado repentinamente. Quase sempre é melhor usar URLs relativos. Eles não serão quebrados se você mudar de domínio.</p>
+
+    <h3>Os atributos de largura e altura</h3>
+    <p>A <code class="code">&lt;img&gt;</code> tag também deve conter os atributos <code class="code">width</code> e <code class="code">height</code>, que especificam a largura e a altura da imagem (em pixels):</p>
+    <p>Exemplo:</p>
+    <pre><code class="code">
+&lt;img src="img_girl.jpg" width="500" height="600"&gt;
+    </code></pre>
+
+    <h3>O atributo alternativo</h3>
+    <p>O <code class="code">alt</code> atributo, obrigatório para a <code class="code">&lt;img&gt;</code> tag, especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, a um erro no <code class="code">src</code> atributo ou ao usuário usando um leitor de tela:</p>
+    <p>Exemplo:</p>
+    <pre><code class="code">
+&lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;
+    </code></pre>
+
+    <h3>Exemplo</h3>
+    <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
+    <pre><code class="code">
+&lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;
+    </code></pre>
+</div>
+
+</body>
+</html>
