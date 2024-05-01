@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Atributo de identificação HTML</h2>
+<p>O atributo HTML <code>id</code> é usado para especificar um ID exclusivo para um elemento HTML.</p>
+
+<p>Você não pode ter mais de um elemento com o mesmo id em um documento HTML.</p>
+
+<h2>Usando o atributo id</h2>
+<p>O <code>id</code> atributo especifica um ID exclusivo para um elemento HTML. O valor do id atributo deve ser exclusivo no documento HTML.</p>
+
+<p>O <code>id</code> atributo é usado para apontar para uma declaração de estilo específica em uma folha de estilos. Também é usado por JavaScript para acessar e manipular o elemento com o id específico.</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>Nota: O nome do ID diferencia maiúsculas de minúsculas!</p>
+<p>Nota: O nome do id deve conter pelo menos um caractere, não pode começar com um número e não deve conter espaços em branco (espaços, tabulações, etc.).</p>
+
+<h3>Diferença entre classe e ID</h3>
+<p>Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome de id deve ser usado apenas por um elemento HTML dentro da página:</p>
+
+<pre>
+&lt;h1 id="myHeader"&gt;My Cities&lt;/h1&gt;
+
+&lt;h2 class="city"&gt;London&lt;/h2&gt;
+&lt;p&gt;London is the capital of England.&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+
+&lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+</pre>
+
+<h2>Marcadores HTML com ID e links</h2>
+<p>Os marcadores HTML são usados ​​para permitir que os leitores acessem partes específicas de uma página da web.</p>
+
+<p>Os marcadores podem ser úteis se a sua página for muito longa.</p>
+
+<p>Para usar um marcador, você deve primeiro criá-lo e depois adicionar um link a ele.</p>
+
+<p>Então, quando o link for clicado, a página rolará até o local com o marcador.</p>
+
+<h3>Exemplo</h3>
+<p>Primeiro, crie um marcador com o <code>id</code> atributo:</p>
+<pre>
+&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+</pre>
+
+<p>Em seguida, adicione um link para o marcador ("Pular para o Capítulo 4"), na mesma página:</p>
+<pre>
+&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</pre>
+
+<p>Ou adicione um link ao marcador ("Pular para o Capítulo 4"), de outra página:</p>
+<pre>
+&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+</pre>
+
+</body>
+</html>

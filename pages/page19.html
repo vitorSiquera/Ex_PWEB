@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .iframe-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    iframe {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Iframes HTML</h2>
+<p>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.</p>
+
+<h2>Sintaxe HTML Iframe</h2>
+<p>A tag HTML <code>&lt;iframe&gt;</code> especifica um quadro embutido.</p>
+
+<p>Um quadro embutido é usado para incorporar outro documento no documento HTML atual.</p>
+
+<h3>Sintaxe</h3>
+<pre>
+&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+</pre>
+<p>Dica: É uma boa prática sempre incluir um <code>title</code> atributo para o arquivo <code>&lt;iframe&gt;</code>. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe.</p>
+
+<h2>Iframe - Definir Altura e Largura</h2>
+<p>Use os atributos <code>height</code> e <code>width</code> para especificar o tamanho do iframe.</p>
+
+<p>A altura e a largura são especificadas em pixels por padrão:</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;
+</pre>
+
+<p>Ou você pode adicionar o <code>style</code> atributo e usar o CSS <code>height</code> e <code>width</code> as propriedades:</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"&gt;&lt;/iframe&gt;
+</pre>
+
+<h2>Iframe - Remover a borda</h2>
+<p>Por padrão, um iframe possui uma borda ao seu redor.</p>
+
+<p>Para remover a borda, adicione o <code>style</code> atributo e use a <code>border</code> propriedade CSS:</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;
+</pre>
+
+<p>Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"&gt;&lt;/iframe&gt;
+</pre>
+
+<h2>Iframe – Alvo para um Link</h2>
+<p>Um iframe pode ser usado como quadro de destino para um link.</p>
+
+<p>O <code>target</code> atributo do link deve referir-se ao <code>name</code> atributo do iframe:</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;
+</pre>
+
+</body>
+</html>

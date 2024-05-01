@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .note {
+      font-size: 120%;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Atributo de classe HTML</h2>
+<p>O atributo HTML <code>class</code> é usado para especificar uma classe para um elemento HTML.</p>
+
+<p>Vários elementos HTML podem compartilhar a mesma classe.</p>
+
+<h2>Usando o atributo class</h2>
+<p>O atributo <code>class</code> é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.</p>
+
+<h3>Exemplo</h3>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="city"&gt;
+  &lt;h2&gt;London&lt;/h2&gt;
+  &lt;p&gt;London is the capital of England.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="city"&gt;
+  &lt;h2&gt;Paris&lt;/h2&gt;
+  &lt;p&gt;Paris is the capital of France.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="city"&gt;
+  &lt;h2&gt;Tokyo&lt;/h2&gt;
+  &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h3>Várias classes</h3>
+<p>Os elementos HTML podem pertencer a mais de uma classe.</p>
+
+<p>Para definir múltiplas classes, separe os nomes das classes com um espaço, por exemplo, <code>&lt;div class="city main"&gt;</code>. O elemento será estilizado de acordo com todas as classes especificadas.</p>
+
+<h3>Diferentes elementos podem compartilhar a mesma classe</h3>
+<p>Diferentes elementos HTML podem apontar para o mesmo nome de classe.</p>
+
+<pre>
+&lt;h2 class="city"&gt;Paris&lt;/h2&gt;
+&lt;p class="city"&gt;Paris is the capital of France&lt;/p&gt;
+</pre>
+
+</body>
+</html>

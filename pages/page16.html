@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elemento HTML Div</title>
+<style>
+.mycontainer {
+  width: 100%;
+  overflow: auto;
+}
+
+.mycontainer div {
+  width: 33%;
+  float: left;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+div.inline-block div {
+  width: 30%;
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  width: 33%;
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.grid-container > div {
+  background-color: lightsalmon;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>Elemento HTML Div</h2>
+
+<h3>&lt;div&gt; como um contêiner</h3>
+<p>O <code>&lt;div&gt;</code> elemento é frequentemente usado para agrupar seções de uma página da web.</p>
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<h3>Alinhar ao centro um elemento &lt;div&gt;</h3>
+<p>Se você tiver um <code>&lt;div&gt;</code> elemento que não tenha 100% de largura e quiser alinhá-lo centralmente, defina a propriedade CSS <code>margin</code> como <code>auto</code>.</p>
+<div style="background-color: lightgrey;">
+  <div style="width:300px;margin:auto;background-color:black;color:white;padding:20px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+</div>
+
+<h3>Vários elementos &lt;div&gt;</h3>
+<p>Você pode ter muitos <code>&lt;div&gt;</code> contêineres na mesma página.</p>
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<div>
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 600.000 inhabitants.</p>
+</div>
+
+<div>
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has almost 3 million inhabitants.</p>
+</div>
+
+<h3>Alinhando elementos &lt;div&gt; lado a lado</h3>
+
+<h4>Flutuador</h4>
+<p>Como usar <code>float</code> para alinhar elementos <code>&lt;div&gt;</code> lado a lado:</p>
+<div class="mycontainer">
+  <div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+  </div>
+</div>
+
+<h4>Bloco embutido</h4>
+<p>Como usar <code>display: inline-block</code> para alinhar elementos <code>&lt;div&gt;</code> lado a lado:</p>
+<div class="inline-block">
+  <div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+  </div>
+</div>
+
+<h4>Flexível</h4>
+<p>Como usar <code>flex</code> para alinhar elementos <code>&lt;div&gt;</code> lado a lado:</p>
+<div class="flex-container">
+  <div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+  </div>
+</div>
+
+<h4>Grade</h4>
+<p>Como usar a grade para alinhar elementos <code>&lt;div&gt;</code> lado a lado:</p>
+<div class="grid-container">
+  <div>
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+
+  <div>
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+  </div>
+</div>
+
+</body>
+</html>
