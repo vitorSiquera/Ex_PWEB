@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotação HTML e elementos de citação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Cotação HTML e elementos de citação</h2>
+    <p>Neste capítulo, examinaremos os elementos <code class="code">&lt;blockquote&gt;</code>, <code class="code">&lt;q&gt;</code>, <code class="code">&lt;abbr&gt;</code>, <code class="code">&lt;address&gt;</code>, <code class="code">&lt;cite&gt;</code> e <code class="code">&lt;bdo&gt;</code> HTML.</p>
+
+    <h3>Exemplo</h3>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+
+    <h3>HTML &lt;blockquote&gt; para cotações</h3>
+    <p>O elemento HTML <code class="code">&lt;blockquote&gt;</code> define uma seção citada de outra fonte.</p>
+    <p>Os navegadores geralmente recuam <code class="code">&lt;blockquote&gt;</code> elementos.</p>
+
+    <h3>HTML &lt;q&gt; para citações curtas</h3>
+    <p>A tag HTML <code class="code">&lt;q&gt;</code> define uma citação curta.</p>
+    <p>Os navegadores normalmente inserem aspas ao redor da citação.</p>
+
+    <h3>HTML &lt;abbr&gt; para abreviações</h3>
+    <p>A tag HTML <code class="code">&lt;abbr&gt;</code> define uma abreviatura ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+    <p>A marcação de abreviaturas pode fornecer informações úteis aos navegadores, sistemas de tradução e motores de busca.</p>
+    <p>Exemplo:</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+    <h3>HTML &lt;address&gt; para informações de contato</h3>
+    <p>A tag HTML <code class="code">&lt;address&gt;</code> define as informações de contato do autor/proprietário de um documento ou artigo.</p>
+    <p>As informações de contato podem ser endereço de e-mail, URL, endereço físico, número de telefone, identificador de mídia social, etc.</p>
+    <p>O texto no <code class="code">&lt;address&gt;</code> elemento geralmente é renderizado em itálico e os navegadores sempre adicionam uma quebra de linha antes e depois do <code class="code">&lt;address&gt;</code> elemento.</p>
+    <p>Exemplo:</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <h3>HTML &lt;cite&gt; para título do trabalho</h3>
+    <p>A <code class="code">&lt;cite&gt;</code> tag HTML define o título de um trabalho criativo (por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).</p>
+    <p>O texto no <code class="code">&lt;cite&gt;</code> elemento geralmente é renderizado em itálico .</p>
+    <p>Exemplo:</p>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+    <h3>HTML &lt;bdo&gt; para substituição bidirecional</h3>
+    <p>BDO significa Substituição Bidirecional.</p>
+    <p>A tag HTML <code class="code">&lt;bdo&gt;</code> é usada para substituir a direção atual do texto:</p>
+    <p>Exemplo:</p>
+    <p><bdo dir="rtl">This text will be written from right to left</bdo></p>
+</div>
+
+</body>
+</html>

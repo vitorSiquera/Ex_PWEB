@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links HTML</title>
+</head>
+<body>
+
+<h2>Links HTML - Hiperlinks</h2>
+<p>Links HTML são hiperlinks.</p>
+<p>Você pode clicar em um link e ir para outro documento.</p>
+<p>Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão.</p>
+
+<h3>Links HTML - Sintaxe</h3>
+<p>A tag HTML &lt;a&gt; define um hiperlink. Possui a seguinte sintaxe:</p>
+<code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>
+<p>O atributo mais importante do &lt;a&gt; elemento é o href atributo, que indica o destino do link.</p>
+<p>O texto do link é a parte que ficará visível ao leitor.</p>
+<p>Clicar no texto do link enviará o leitor ao endereço URL especificado.</p>
+<p>Exemplo:</p>
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+<h3>Links HTML - O atributo de destino</h3>
+<p>Por padrão, a página vinculada será exibida na janela atual do navegador. Para alterar isso, você deve especificar outro destino para o link.</p>
+<p>O target atributo especifica onde abrir o documento vinculado.</p>
+<p>O target atributo pode ter um dos seguintes valores:</p>
+<ul>
+    <li><strong>_self:</strong> Padrão. Abre o documento na mesma janela/aba em que foi clicado</li>
+    <li><strong>_blank:</strong> Abre o documento em uma nova janela ou guia</li>
+    <li><strong>_parent:</strong> Abre o documento no quadro pai</li>
+    <li><strong>_top:</strong> Abre o documento em todo o corpo da janela</li>
+</ul>
+<p>Exemplo:</p>
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+<h3>URLs absolutos versus URLs relativos</h3>
+<p>Ambos os exemplos acima usam um URL absoluto (um endereço da web completo) no href atributo.</p>
+<p>Um link local (um link para uma página dentro do mesmo site) é especificado com um URL relativo (sem a parte “https://www”):</p>
+<h4>URLs Absolutos:</h4>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+<h4>URLs Relativos:</h4>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+</body>
+</html>
