@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Entities</title>
+</head>
+<body>
+
+<h2>Entidades de caracteres HTML</h2>
+<p>Alguns caracteres são reservados em HTML.</p>
+<p>Se você usar os sinais de menor que (&lt;) ou maior que (&gt;) em seu texto HTML, o navegador poderá misturá-los com tags.</p>
+<p>Nomes ou números de entidades podem ser usados para exibir caracteres HTML reservados.</p>
+<p>Os nomes das entidades são assim:</p>
+<code>&amp;entity_name;</code>
+<p>Os números das entidades são assim:</p>
+<code>&amp;#entity_number;</code>
+<p>Para exibir um sinal de menor que (&lt;) devemos escrever: <code>&amp;lt;</code> ou <code>&amp;#60;</code></p>
+<p>Os nomes das entidades são mais fáceis de lembrar do que os números das entidades.</p>
+
+<h3>Espaço inquebrável</h3>
+<p>Uma entidade HTML comumente usada é o espaço inseparável: &nbsp; (&amp;#160;)</p>
+<p>Um espaço ininterrupto é um espaço que não será dividido em uma nova linha.</p>
+<p>Outro uso comum do espaço ininterrupto é evitar que os navegadores trunquem espaços em páginas HTML.</p>
+<p>Se você escrever 10 espaços no seu texto, o navegador removerá 9 deles. Para adicionar espaços reais ao seu texto, você pode usar o &nbsp; entidade de personagem.</p>
+<p>O hífen inseparável ( ‑ ) é usado para definir um caractere de hífen (&#8209;) que não se divide em uma nova linha.</p>
+
+<h3>Algumas entidades úteis de caracteres HTML</h3>
+<table>
+  <tr>
+    <th>Result</th>
+    <th>Description</th>
+    <th>Name</th>
+    <th>Number</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>non-breaking space</td>
+    <td>&amp;nbsp;</td>
+    <td>&amp;#160;</td>
+  </tr>
+  <tr>
+    <td>&lt;</td>
+    <td>less than</td>
+    <td>&amp;lt;</td>
+    <td>&amp;#60;</td>
+  </tr>
+  <tr>
+    <td>&gt;</td>
+    <td>greater than</td>
+    <td>&amp;gt;</td>
+    <td>&amp;#62;</td>
+  </tr>
+  <!-- Add more entities as needed -->
+</table>
+
+<h3>Combinando marcas diacríticas</h3>
+<p>Uma marca diacrítica é um “glifo” adicionado a uma letra.</p>
+<p>Algumas marcas diacríticas, como grave (̀) e aguda (́) são chamadas de acentos.</p>
+<p>Marcas diacríticas podem ser usadas em combinação com caracteres alfanuméricos para produzir um caractere que não esteja presente no conjunto de caracteres (codificação) usado na página.</p>
+<p>Aqui estão alguns exemplos:</p>
+<table>
+  <tr>
+    <th>Mark</th>
+    <th>Character</th>
+    <th>Construct</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>̀</td>
+    <td>a</td>
+    <td>&amp;#768;</td>
+    <td>à</td>
+  </tr>
+  <tr>
+    <td>́</td>
+    <td>a</td>
+    <td>&amp;#769;</td>
+    <td>á</td>
+  </tr>
+  <tr>
+    <td>̂</td>
+    <td>a</td>
+    <td>&amp;#770;</td>
+    <td>â</td>
+  </tr>
+  <tr>
+    <td>̃</td>
+    <td>a</td>
+    <td>&amp;#771;</td>
+    <td>ã</td>
+  </tr>
+  <tr>
+    <td>̀</td>
+    <td>O</td>
+    <td>&amp;#768;</td>
+    <td>Ò</td>
+  </tr>
+  <tr>
+    <td>́</td>
+    <td>O</td>
+    <td>&amp;#769;</td>
+    <td>Ó</td>
+  </tr>
+  <tr>
+    <td>̂</td>
+    <td>O</td>
+    <td>&amp;#770;</td>
+    <td>Ô</td>
+  </tr>
+  <tr>
+    <td>̃</td>
+    <td>O</td>
+    <td>&amp;#771;</td>
+    <td>Õ</td>
+  </tr>
+  <!-- Add more examples as needed -->
+</table>
+
+</body>
+</html>

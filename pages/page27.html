@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elementos de Formulário HTML</title>
+</head>
+<body>
+
+<h2>Elementos de formulário HTML</h2>
+<p>Este capítulo descreve todos os diferentes elementos do formulário HTML.</p>
+
+<h3>Os elementos HTML &lt;form&gt;</h3>
+<p>O elemento HTML &lt;form&gt; pode conter um ou mais dos seguintes elementos de formulário:</p>
+<ul>
+  <li>&lt;input&gt;</li>
+  <li>&lt;label&gt;</li>
+  <li>&lt;select&gt;</li>
+  <li>&lt;textarea&gt;</li>
+  <li>&lt;button&gt;</li>
+  <li>&lt;fieldset&gt;</li>
+  <li>&lt;legend&gt;</li>
+  <li>&lt;datalist&gt;</li>
+  <li>&lt;output&gt;</li>
+  <li>&lt;option&gt;</li>
+  <li>&lt;optgroup&gt;</li>
+</ul>
+
+<h3>O elemento &lt;input&gt;</h3>
+<p>Um dos elementos de formulário mais utilizados é o &lt;input&gt; elemento.</p>
+<p>O &lt;input&gt; elemento pode ser exibido de diversas maneiras, dependendo do atributo type.</p>
+<p>Exemplo:</p>
+<pre>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+</pre>
+<p>Todos os diferentes valores do atributo type são abordados no próximo capítulo: Tipos de entrada HTML.</p>
+
+<h3>O elemento &lt;label&gt;</h3>
+<p>O &lt;label&gt; elemento define um rótulo para vários elementos do formulário.</p>
+<p>O &lt;label&gt; elemento é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada.</p>
+<p>O &lt;label&gt; elemento também ajuda usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do &lt;label&gt; elemento, ele alterna o botão de opção/caixa de seleção.</p>
+<p>O atributo for da &lt;label&gt; tag deve ser igual ao atributo id do &lt;input&gt; elemento para uni-los.</p>
+
+<h3>O elemento &lt;select&gt;</h3>
+<p>O &lt;select&gt; elemento define uma lista suspensa:</p>
+<pre>
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</pre>
+<p>O &lt;option&gt; elemento define uma opção que pode ser selecionada.</p>
+<p>Por padrão, o primeiro item da lista suspensa é selecionado.</p>
+<p>Para definir uma opção pré-selecionada, adicione o atributo selected à opção:</p>
+<pre>
+<option value="fiat" selected>Fiat</option>
+</pre>
+<p>Valores visíveis:</p>
+<p>Use o atributo size para especificar o número de valores visíveis:</p>
+<pre>
+<select id="cars" name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</pre>
+<p>Permitir múltiplas seleções:</p>
+<p>Use o atributo multiple para permitir que o usuário selecione mais de um valor:</p>
+<pre>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</pre>
+
+<h3>O elemento &lt;textarea&gt;</h3>
+<p>O &lt;textarea&gt; elemento define um campo de entrada multilinha (uma área de texto):</p>
+<pre>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+</pre>
+<p>O atributo rows especifica o número visível de linhas em uma área de texto.</p>
+<p>O atributo cols especifica a largura visível de uma área de texto.</p>
+
+<h3>O elemento &lt;button&gt;</h3>
+<p>O &lt;button&gt; elemento define um botão clicável:</p>
+<pre>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</pre>
+
+</body>
+</html>

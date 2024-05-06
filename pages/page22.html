@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Style Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    code {
+      font-family: Consolas, monospace;
+      background-color: #f4f4f4;
+      padding: 2px 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Guia de estilo HTML</h2>
+<p>Um código HTML consistente, limpo e organizado torna mais fácil para outras pessoas lerem e compreenderem seu código.</p>
+
+<h3>Sempre declarar o tipo de documento</h3>
+<p>Sempre declare o tipo de documento como a primeira linha do seu documento.</p>
+<p>O tipo de documento correto para HTML é:</p>
+<code>&lt;!DOCTYPE html&gt;</code>
+
+<h3>Use nomes de elementos em letras minúsculas</h3>
+<p>HTML permite misturar letras maiúsculas e minúsculas nos nomes dos elementos.</p>
+<p>No entanto, recomendamos usar nomes de elementos em letras minúsculas porque:</p>
+<ul>
+  <li>Misturar nomes maiúsculos e minúsculos parece ruim</li>
+  <li>Os desenvolvedores normalmente usam nomes em minúsculas</li>
+  <li>Letras minúsculas parecem mais limpas</li>
+  <li>Letras minúsculas são mais fáceis de escrever</li>
+</ul>
+<p>Bom:</p>
+<code>&lt;body&gt;</code>
+<code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+<p>Ruim:</p>
+<code>&lt;BODY&gt;</code>
+<code>&lt;P&gt;This is a paragraph.&lt;/P&gt;</code>
+
+<h3>Fechar todos os elementos HTML</h3>
+<p>Em HTML, você não precisa fechar todos os elementos (por exemplo, o &lt;p&gt; elemento).</p>
+<p>No entanto, recomendamos fortemente fechar todos os elementos HTML, assim:</p>
+<p>Bom:</p>
+<code>&lt;section&gt;</code>
+<code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+<code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+<code>&lt;/section&gt;</code>
+<p>Ruim:</p>
+<code>&lt;section&gt;</code>
+<code>  &lt;p&gt;This is a paragraph.</code>
+<code>  &lt;p&gt;This is a paragraph.</code>
+<code>&lt;/section&gt;</code>
+
+<h3>Use nomes de atributos em letras minúsculas</h3>
+<p>HTML permite misturar letras maiúsculas e minúsculas em nomes de atributos.</p>
+<p>No entanto, recomendamos usar nomes de atributos em letras minúsculas porque:</p>
+<ul>
+  <li>Misturar nomes maiúsculos e minúsculos parece ruim</li>
+  <li>Os desenvolvedores normalmente usam nomes em minúsculas</li>
+  <li>Letras minúsculas parecem mais limpas</li>
+  <li>Letras minúsculas são mais fáceis de escrever</li>
+</ul>
+<p>Bom:</p>
+<code>&lt;a href="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code>
+<p>Ruim:</p>
+<code>&lt;a HREF="https://www.w3schools.com/html/"&gt;Visit our HTML tutorial&lt;/a&gt;</code>
+
+<h3>Sempre citar valores de atributos</h3>
+<p>HTML permite valores de atributos sem aspas.</p>
+<p>No entanto, recomendamos citar valores de atributos porque:</p>
+<ul>
+  <li>Os desenvolvedores normalmente citam valores de atributos</li>
+  <li>Os valores citados são mais fáceis de ler</li>
+  <li>Você DEVE usar aspas se o valor contiver espaços</li>
+</ul>
+<p>Bom:</p>
+<code>&lt;table class="striped"&gt;</code>
+<p>Ruim:</p>
+<code>&lt;table class=striped&gt;</code>
+<p>Muito mal:</p>
+<p>Isso não funcionará porque o valor contém espaços:</p>
+<code>&lt;table class=table striped&gt;</code>
+
+</body>
+</html>

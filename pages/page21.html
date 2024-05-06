@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .example-container {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Elementos Semânticos HTML</h2>
+<p>Elementos semânticos = elementos com significado.</p>
+
+<h3>O que são elementos semânticos?</h3>
+<p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.</p>
+
+<p>Exemplos de elementos não semânticos: <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> - Não dizem nada sobre o seu conteúdo.</p>
+
+<p>Exemplos de elementos semânticos: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code> e <code>&lt;article&gt;</code> - Definem claramente seu conteúdo.</p>
+
+<h3>Elementos Semânticos em HTML</h3>
+<p>Muitos sites contêm código HTML como: <code>&lt;div id="nav"&gt;</code>, <code>&lt;div class="header"&gt;</code>, <code>&lt;div id="footer"&gt;</code> para indicar navegação, cabeçalho e rodapé.</p>
+
+<p>Em HTML existem alguns elementos semânticos que podem ser usados ​​para definir diferentes partes de uma página web:</p>
+
+<ul>
+  <li>&lt;article&gt;</li>
+  <li>&lt;aside&gt;</li>
+  <li>&lt;details&gt;</li>
+  <li>&lt;figcaption&gt;</li>
+  <li>&lt;figure&gt;</li>
+  <li>&lt;footer&gt;</li>
+  <li>&lt;header&gt;</li>
+  <li>&lt;main&gt;</li>
+  <li>&lt;mark&gt;</li>
+  <li>&lt;nav&gt;</li>
+  <li>&lt;section&gt;</li>
+  <li>&lt;summary&gt;</li>
+  <li>&lt;time&gt;</li>
+</ul>
+
+<h3>Elemento HTML &lt;section&gt;</h3>
+<p>O &lt;section&gt; elemento define uma seção em um documento.</p>
+
+<p>De acordo com a documentação HTML do W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um título."</p>
+
+<p>Exemplo:</p>
+
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+<h3>Elemento HTML &lt;article&gt;</h3>
+<p>O &lt;article&gt; elemento especifica conteúdo independente e independente.</p>
+
+<p>Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site.</p>
+
+<p>Exemplo:</p>
+
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+<article>
+  <h2>Microsoft Edge</h2>
+  <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+
+<h3>Exemplo 2</h3>
+<p>Use CSS para estilizar o elemento &lt;article&gt;:</p>
+
+<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+  <article class="browser">
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+  <article class="browser">
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+  </article>
+</article>
+
+<h3>Aninhando &lt;article&gt; em &lt;section&gt; ou vice-versa?</h3>
+<p>O &lt;article&gt; elemento especifica conteúdo independente e independente.</p>
+
+<p>O &lt;section&gt; elemento define a seção em um documento.</p>
+
+<p>Podemos usar as definições para decidir como aninhar esses elementos? Não, não podemos!</p>
+
+<p>Assim, você encontrará páginas HTML com &lt;section&gt; elementos contendo &lt;article&gt; elementos e &lt;article&gt; elementos contendo &lt;section&gt; elementos.</p>
+
+<h3>Elemento HTML &lt;header&gt;</h3>
+<p>O &lt;header&gt; elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.</p>
+
+<p>Um &lt;header&gt; elemento normalmente contém:</p>
+
+<ul>
+  <li>um ou mais elementos de título (&lt;h1&gt; - &lt;h6&gt;)</li>
+  <li>logotipo ou ícone</li>
+  <li>informações de autoria</li>
+</ul>
+
+<p>Nota: Você pode ter vários &lt;header&gt; elementos em um documento HTML. No entanto, &lt;header&gt; não pode ser colocado dentro de um &lt;footer&gt; ou &lt;address&gt; outro &lt;header&gt; elemento.</p>
+
+<p>Exemplo:</p>
+
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+
+<h3>Elemento HTML &lt;footer&gt;</h3>
+<p>O &lt;footer&gt; elemento define um rodapé para um documento ou seção.</p>
+
+<p>Um &lt;footer&gt; elemento normalmente contém:</p>
+
+<ul>
+  <li>informações de autoria</li>
+  <li>informações sobre direitos autorais</li>
+  <li>informações de contato</li>
+  <li>Mapa do site</li>
+  <li>links de volta ao topo</li>
+  <li>documentos relacionados</li>
+</ul>
+
+<p>Você pode ter vários &lt;footer&gt; elementos em um documento.</p>
+
+<p>Exemplo:</p>
+
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+</body>
+</html>

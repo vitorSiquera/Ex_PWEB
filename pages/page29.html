@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atributos de entrada HTML</title>
+</head>
+<body>
+
+<h2>Atributos de entrada HTML</h2>
+
+<h3>O atributo de valor</h3>
+<p>O atributo <code>value</code> do input especifica um valor inicial para um campo de entrada:</p>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<h3>O atributo somente leitura</h3>
+<p>O atributo <code>readonly</code> do input especifica que um campo de entrada é somente leitura:</p>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<h3>O atributo desabilitado</h3>
+<p>O atributo <code>disabled</code> do input especifica que um campo de entrada deve ser desabilitado:</p>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<h3>O atributo de tamanho</h3>
+<p>O atributo <code>size</code> do input especifica a largura visível, em caracteres, de um campo de entrada:</p>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form>
+
+<h3>O atributo maxlength</h3>
+<p>O atributo <code>maxlength</code> do input especifica o número máximo de caracteres permitidos em um campo de entrada:</p>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form>
+
+<h3>Os atributos mínimo e máximo</h3>
+<p>Os atributos <code>min</code> e <code>max</code> do input especificam os valores mínimo e máximo para um campo de entrada:</p>
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label><br>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label><br>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="quantity">Quantity (between 1 and 5):</label><br>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+<h3>O Atributo múltiplo</h3>
+<p>O atributo <code>multiple</code> do input especifica que o usuário pode inserir mais de um valor em um campo de entrada:</p>
+<form>
+  <label for="files">Select files:</label><br>
+  <input type="file" id="files" name="files" multiple>
+</form>
+
+</body>
+</html>

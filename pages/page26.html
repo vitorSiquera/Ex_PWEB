@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Formulários</title>
+</head>
+<body>
+
+<h2>Formulários HTML</h2>
+<p>Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é geralmente enviada a um servidor para processamento.</p>
+
+<h3>O elemento &lt;form&gt;</h3>
+<p>O elemento HTML &lt;form&gt; é usado para criar um formulário HTML para entrada do usuário:</p>
+<pre>
+<code>&lt;form&gt;
+. 
+  elementos do formulário
+.
+&lt;/form&gt;
+</code></pre>
+<p>O &lt;form&gt; elemento é um contêiner para diferentes tipos de elementos de entrada, como campos de texto, caixas de seleção, botões de opção, botões de envio, etc.</p>
+
+<h3>O elemento &lt;input&gt;</h3>
+<p>O elemento HTML &lt;input&gt; é o elemento de formulário mais usado. Um &lt;input&gt; elemento pode ser exibido de várias maneiras, dependendo do tipo de atributo.</p>
+<p>Aqui estão alguns exemplos:</p>
+<table>
+  <tr>
+    <th>Tipo</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>&lt;input type="text"&gt;</td>
+    <td>Exibe um campo de entrada de texto de linha única</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="radio"&gt;</td>
+    <td>Exibe um botão de opção (para selecionar uma das muitas opções)</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="checkbox"&gt;</td>
+    <td>Exibe uma caixa de seleção (para selecionar zero ou mais dentre muitas opções)</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="submit"&gt;</td>
+    <td>Exibe um botão enviar (para enviar o formulário)</td>
+  </tr>
+  <tr>
+    <td>&lt;input type="button"&gt;</td>
+    <td>Exibe um botão clicável</td>
+  </tr>
+</table>
+
+<h4>Campos de texto</h4>
+<p>Define &lt;input type="text"&gt; um campo de entrada de linha única para entrada de texto.</p>
+<p>Exemplo:</p>
+<form>
+  <label for="fname">Nome:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+<p>Nota: O formulário em si não é visível. Observe também que a largura padrão de um campo de entrada é de 20 caracteres.</p>
+
+<h4>O elemento &lt;label&gt;</h4>
+<p>Observe o uso do &lt;label&gt; elemento no exemplo acima. A &lt;label&gt; tag define um rótulo para muitos elementos do formulário.</p>
+<p>O for atributo da &lt;label&gt; tag deve ser igual ao id atributo do &lt;input&gt; elemento para uni-los.</p>
+
+</body>
+</html>
